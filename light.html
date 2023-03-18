@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Bulb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black;">
+    <img id="bulb"  src="Bulb//bulb off.jpg" alt="" class="center">
+    <button id="toggleBtn" class="center btn">Turn ON</button>
+    <script>
+        let btn = document.getElementById("toggleBtn")
+        let bulb = document.getElementById("bulb")
+        
+        function toggleBulb(e){
+            if(btn.textContent.includes("ON")){
+                bulb.src = "Bulb/bulb on.jpg"
+                btn.textContent = "Turn OFF"
+            }
+            else{
+                bulb.src = "Bulb/bulb off.jpg"
+                btn.textContent = "Turn ON"
+            }
+        }
+        btn.addEventListener("click",toggleBulb)
+    </script>
+</body>
+</html>
