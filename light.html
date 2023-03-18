@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: black;">
-    <img id="bulb"  src="bulb off.jpg" alt="" class="center">
+    <img id="bulb"  src="bulb_off.jpg" alt="" class="center">
     <button id="toggleBtn" class="center btn">Turn ON</button>
     <script>
         let btn = document.getElementById("toggleBtn")
@@ -16,7 +16,7 @@
         
         function toggleBulb(e){
             if(btn.textContent.includes("ON")){
-                bulb.src = "bulb on.jpg"
+                bulb.src = "bulb_on.jpg"
                 btn.textContent = "Turn OFF"
             }
             else{
